@@ -1,12 +1,9 @@
 name: Kotlin CI
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  schedule:
+    - cron: '0 17 * * *'  # 每天UTC 17:00（北京时间凌晨1点）
+  workflow_dispatch:
 
 jobs:
   build:
