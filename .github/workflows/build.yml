@@ -1,9 +1,7 @@
 name: Kotlin CI
 
 on:
-  schedule:
-    - cron: '0 17 * * *'  # 每天UTC 17:00（北京时间凌晨1点）
-  workflow_dispatch:
+   workflow_dispatch:
 
 jobs:
   build:
